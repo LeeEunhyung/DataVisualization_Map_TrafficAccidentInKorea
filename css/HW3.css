@@ -1,0 +1,57 @@
+header {
+    font-size: 30px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.first {
+    display: flex;
+    margin: auto;
+}
+
+.dot {
+    margin: auto;
+    width: 1000px;
+}
+
+#check {
+    width: 560px;
+    height: 30px;
+    margin: auto;
+}
+
+.check_box {
+    margin: auto;
+}
+
+.map1 {
+    margin: auto;
+    width: 400px;
+}
+
+.map2 {
+    display: flex;
+    margin: auto;
+}
+
+.map2_1, .map2_2, .map2_3, .map2_4, .map2_5 {
+    margin: auto;
+    text-align: center;
+}
+
+.middle {
+    margin: auto;
+    height: 300px;
+    width: 1000px;
+}
+
+.color {
+    margin: auto;
+    height: 100px;
+    width: 1000px;
+}

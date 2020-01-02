@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang = "ko">
+    <head>
+      <meta charset = "UTF-8">
+      <meta name = "viewport" content = "width = divce- width, initial-scale = 1.0">
+      <meta http-equiv = "X-UA-Compatible" content = "ie = edge">
+      <script type='text/javascript' src='http://www.google.com/jsapi'></script>
+      <link rel = "stylesheet" href = "css/HW3.css">
+    </head>
+
+    <body>
+      <script src="https://d3js.org/d3.v5.min.js"></script>
+      <header> 
+          <h1>Data Visualization HW3</h1> 
+      </header>
+      <script>
+        function interaction1() {
+          dot_interaction();
+          map_interaction();
+        }
+        function interaction2 () {
+          m1();
+          m2();
+          m3();
+          m4();
+          m5();
+        }
+      </script>
+      <h2>[년도에 따른 지역별 사상자 발생률]</h2>
+      <div class = "first">
+        <div class = "dot">
+          <script type = "text/javascript" src='JavaScript/년도_지역_점.js'></script>
+        </div>
+        <div class = "map1">
+          <script type = "text/javascript" src="JavaScript/한국데이터.js"></script>
+          <script type = "text/javascript" src="JavaScript/사상자수비율.js"></script>
+        </div>
+      </div>
+      <div id = "check">
+        <form name = "CHECK">
+          <input type="radio" id = 's0' name = 'year' value="s0" onclick="interaction1()" checked><label for="s0">5년 평균</label>
+          <input type="radio" id = 's1' name = 'year' value="s1" onclick="interaction1()"><label for="s1">2014년도</label>
+          <input type="radio" id = 's2' name = 'year' value="s2" onclick="interaction1()"><label for="s2">2015년도</label>
+          <input type="radio" id = 's3' name = 'year' value="s3" onclick="interaction1()"><label for="s3">2016년도</label>
+          <input type="radio" id = 's4' name = 'year' value="s4" onclick="interaction1()"><label for="s4">2017년도</label>
+          <input type="radio" id = 's5' name = 'year' value="s5" onclick="interaction1()"><label for="s5">2018년도</label>
+        </form>
+      </div>
+      
+      <h2>[사고유형별 대구의 발생 비율 순위]</h2>
+      <div class = "map2">
+          <div class = "check_box">
+            <input type="checkbox" id = 'c1' onclick="interaction2()"><label for="c1">중구</label>
+            <br></br>
+            <input type="checkbox" id = 'c2' onclick="interaction2()"><label for="c2">동구</label>
+            <br></br>
+            <input type="checkbox" id = 'c3' onclick="interaction2()"><label for="c3">서구</label>
+            <br></br>
+            <input type="checkbox" id = 'c4' onclick="interaction2()"><label for="c4">남구</label>
+            <br></br>
+            <input type="checkbox" id = 'c5' onclick="interaction2()"><label for="c5">북구</label>
+            <br></br>
+            <input type="checkbox" id = 'c6' onclick="interaction2()"><label for="c6">수성구</label>
+            <br></br>
+            <input type="checkbox" id = 'c7' onclick="interaction2()"><label for="c7">달서구</label>
+            <br></br>
+            <input type="checkbox" id = 'c8' onclick="interaction2()"><label for="c8">달성군</label>
+        </div>
+        <div class = "map2_1">
+          <script type = "text/javascript" src="JavaScript/대구데이터.js"></script>
+          <script type = "text/javascript" src="JavaScript/대구_지역별_자전거.js"></script>
+          <p>[대구 광역시 자전거 사고율]</p>
+        </div>
+        <div class = "map2_2">
+          <script type = "text/javascript" src="JavaScript/대구데이터.js"></script>
+          <script type = "text/javascript" src="JavaScript/대구_지역별_보행노인.js"></script>
+          <p>[대구 광역시 보행노인 사고율]</p>
+        </div>
+        <div class = "map2_3">
+          <script type = "text/javascript" src="JavaScript/대구데이터.js"></script>
+          <script type = "text/javascript" src="JavaScript/대구_지역별_무단횡단.js"></script>
+          <p>[대구 광역시 무단횡단 사고율]</p>
+        </div>
+        <div class = "map2_4">
+          <script type = "text/javascript" src="JavaScript/대구데이터.js"></script>
+          <script type = "text/javascript" src="JavaScript/대구_지역별_보행어린이.js"></script>
+          <p>[대구 광역시 보행어린이 사고율]</p>
+        </div>
+        <div class = "map2_5">
+          <script type = "text/javascript" src="JavaScript/대구데이터.js"></script>
+          <script type = "text/javascript" src="JavaScript/대구_지역별_스쿨존어린이.js"></script>
+          <p>[대구 광역시 스쿨존어린이 사고율]</p>
+        </div>
+      </div>
+      <div class = "color">
+        <script type = "text/javascript" src="JavaScript/color.js"></script>
+      </div>
+      
+    </body>
+</html>
+ 
+<!--     
+    <div id = 'A'>
+        <script type='text/javascript' src='2014_사상자수비율.js'></script>
+      </div>
+      <div id = 'B'>
+        <script type='text/javascript' src='2015_사상자수비율.js'></script>
+      </div>
+      <div id = 'C'>
+        <script type='text/javascript' src='2016_사상자수비율.js'></script>
+      </div>
+      <div id = 'D'>
+        <script type='text/javascript' src='2017_사상자수비율.js'></script>
+      </div>
+      <div id = 'E'>
+        <script type='text/javascript' src='2018_사상자수비율.js'></script>
+      </div> -->
+      
