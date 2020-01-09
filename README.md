@@ -1,4 +1,4 @@
-# TrafficAccidentInKorea_Map_DataVisualization
+# DataVisualization_Map_TrafficAccidentInKorea
 - 데이터시각화 HW3 - d3.js와 geoJSON을 활용한 한국 교통사고 데이터 맵 그래프 시각화
 
 ### Environment
